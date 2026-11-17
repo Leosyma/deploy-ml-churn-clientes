@@ -11,7 +11,7 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 
 # Configuração da página do Streamlit
-st.set_page_config(page_title = "Data Science Academy", page_icon = ":100:", layout = "centered")
+st.set_page_config(page_title = "Predição de churn", page_icon = ":100:", layout = "centered")
 
 # Carregar o modelo e o scaler
 modelo_dsa = joblib.load('dsa_modelo_final.pkl')
@@ -67,7 +67,7 @@ def predict(data):
     return prediction
 
 # Interface do Streamlit
-st.title("DSA - Preditor de Churn com RandomForest")
+st.title("Preditor de Churn com RandomForest")
 
 # Criação de campos para entrada de dados
 idade = st.number_input('Idade', min_value = 18, max_value = 100, value = 30)
@@ -108,9 +108,3 @@ if st.button('Prever Churn'):
     prediction = predict(input_data)
 
     st.write('Churn Previsto:' , 'Sim' if prediction[0] == 1 else 'Não')
-
-    st.write('Obrigado - Data Science Academy')
-
-
-
-
