@@ -32,8 +32,8 @@ The application allows users to:
 ├── deploy.py                  # Streamlit application for model deployment
 ├── Projeto2.ipynb             # Notebook used for model development and training
 ├── dataset.csv                # Dataset used in the project
-├── dsa_modelo_final.pkl       # Trained Random Forest model
-├── dsa_padronizador.pkl       # Scaler used for preprocessing
+├── modelo_final.pkl       # Trained Random Forest model
+├── padronizador.pkl       # Scaler used for preprocessing
 ├── requirements.txt           # Project dependencies
 ├── LEIAME.txt                 # Original execution instructions
 └── README.md                  # Project documentation
@@ -78,13 +78,13 @@ The contract duration can be:
 Create a Conda virtual environment:
 
 ```bash
-conda create --name dsadeploymlp2 python=3.13
+conda create --name churn python=3.13
 ```
 
 Activate the environment:
 
 ```bash
-conda activate dsadeploymlp2
+conda activate churn
 ```
 
 Install `pip` and the project dependencies:
@@ -134,8 +134,8 @@ Churn Predicted: No
 
 ## Notes
 
-* The trained model must be available as `dsa_modelo_final.pkl`.
-* The scaler must be available as `dsa_padronizador.pkl`.
+* The trained model must be available as `modelo_final.pkl`.
+* The scaler must be available as `padronizador.pkl`.
 * The input columns used in the application must match the columns used during model training.
 * This project was developed for educational purposes and demonstrates how to deploy a Machine Learning model using Streamlit.
 
